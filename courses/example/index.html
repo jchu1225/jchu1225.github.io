@@ -276,7 +276,7 @@
   <meta property="og:description" content="Learn how to use Academic&#39;s docs layout for publishing online courses, software documentation, and tutorials."><meta property="og:image" content="https://jchu1225.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
   <meta property="twitter:image" content="https://jchu1225.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
   
-    <meta property="og:updated_time" content="2018-09-09T00:00:00&#43;00:00">
+    <meta property="og:updated_time" content="2021-06-28T00:00:00&#43;00:00">
   
 
   
@@ -390,28 +390,6 @@
         
         
 
-        
-
-        
-        
-        
-          
-        
-
-        
-        
-        
-        
-        
-        
-
-        <li class="nav-item">
-          <a class="nav-link  active" href="/courses/"><span>Courses</span></a>
-        </li>
-
-        
-        
-
       
 
         
@@ -519,7 +497,30 @@
     <li><a href="#flexibility">Flexibility</a></li>
     <li><a href="#delete-tutorials">Delete tutorials</a></li>
     <li><a href="#update-site-menu">Update site menu</a></li>
-    <li><a href="#update-the-docs-menu">Update the docs menu</a></li>
+    <li><a href="#toc_depth-2">title: &ldquo;Syllabus&rdquo;
+description: &quot;&quot;
+output:
+distill::distill_article:
+toc: true
+toc_depth: 2</a></li>
+    <li><a href="#course-title-and-instructor">Course title and instructor</a></li>
+    <li><a href="#purpose-and-contents-of-the-class">Purpose and contents of the class</a></li>
+    <li><a href="#prerequisites">Prerequisites</a></li>
+    <li><a href="#textbook">Textbook</a></li>
+    <li><a href="#topics-covered">Topics covered</a></li>
+    <li><a href="#-l-page">::: l-page</a></li>
+    <li><a href="#computing-requirements">Computing requirements</a></li>
+    <li><a href="#course-site">Course site</a></li>
+    <li><a href="#assignments-and-grading">Assignments and grading</a></li>
+    <li><a href="#late-assignment-policy">Late assignment policy</a></li>
+    <li><a href="#extra-assignment-for-graduate-course-credit">Extra assignment for graduate course credit</a></li>
+    <li><a href="#office-hours">Office hours</a></li>
+    <li><a href="#email-policy">Email policy</a></li>
+    <li><a href="#special-accommodations">Special accommodations</a></li>
+    <li><a href="#academic-dishonesty">Academic dishonesty</a></li>
+    <li><a href="#sharing-of-course-materials-is-prohibited">Sharing of Course Materials is Prohibited</a></li>
+    <li><a href="#class-recordings">Class Recordings</a></li>
+    <li><a href="#reuse">Reuse</a></li>
   </ul>
 </nav>
 
@@ -559,8 +560,255 @@
   url = &quot;docs/&quot;
   weight = 50
 </code></pre>
-<h2 id="update-the-docs-menu">Update the docs menu</h2>
-<p>If you use the <em>docs</em> layout, note that the name of the menu in the front matter should be in the form <code>[menu.X]</code> where <code>X</code> is the folder name. Hence, if you rename the <code>courses/example/</code> folder, you should also rename the menu definitions in the front matter of files within <code>courses/example/</code> from <code>[menu.example]</code> to <code>[menu.&lt;NewFolderName&gt;]</code>.</p>
+<hr>
+<h2 id="toc_depth-2">title: &ldquo;Syllabus&rdquo;
+description: &quot;&quot;
+output:
+distill::distill_article:
+toc: true
+toc_depth: 2</h2>
+<pre><code class="language-{r">knitr::opts_chunk$set(echo = FALSE)
+</code></pre>
+<h2 id="course-title-and-instructor">Course title and instructor</h2>
+<p><strong>Title:</strong> SDS 375/395 Data Visualization in R<br>
+<strong>Unique:</strong> 57800, 57915, TTH 9:30am&ndash;11:00am<br></p>
+<p><strong>Instructor:</strong> Claus	O.	Wilke<br>
+<strong>Email:</strong> <a href="mailto:wilke@austin.utexas.edu">wilke@austin.utexas.edu</a><br>
+<strong>Office Hours:</strong> Mon. 12:00pm - 1:00pm (open Zoom), or by appointment <br>
+<strong>GitHub:</strong> 
+<a href="https://github.com/clauswilke" target="_blank" rel="noopener">clauswilke</a> <br></p>
+<p><strong>Teaching Assistant:</strong> Anastasiya Kulikova<br>
+<strong>Email:</strong> <a href="mailto:akulikova82@yahoo.com">akulikova82@yahoo.com</a><br>
+<strong>Office Hours:</strong> Fri. 3:00pm - 4:00pm (open Zoom), or by appointment <br>
+<strong>GitHub:</strong> 
+<a href="https://github.com/akulikova64" target="_blank" rel="noopener">akulikova64</a></p>
+<h2 id="purpose-and-contents-of-the-class">Purpose and contents of the class</h2>
+<p>In this class, students will learn how to visualize data sets and how to reason about and communicate with data visualizations. A substantial component of this class will be dedicated to learning how to program in R. In addition, students will learn how to compile analyses and visualizations into reports, how to make the reports reproducible, and how to post reports on a website or blog.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>The class requires no prior knowledge of programming. However, students are expected to have successfully completed an introductory statistics class taught with R, such as SDS 328M, and they are expected to have some basic familiarity with the statistical language R.</p>
+<p>This class is not a biology class, and no knowledge of biology is expected. Thus, the class is suitable for anybody interested in data visualization, including mathematicians, engineers, physicists, etc.</p>
+<h2 id="textbook">Textbook</h2>
+<p>This class draws heavily from materials presented in the following two books. Both books are freely available online and you do not need to purchase a physical copy of either book to succeed in this class.</p>
+<ol>
+<li>
+<p>Claus O. Wilke. 
+<a href="https://clauswilke.com/dataviz" target="_blank" rel="noopener">Fundamentals of Data Visualization.</a> O&rsquo;Reilly Media, 2019.</p>
+</li>
+<li>
+<p>Kieran Healy. 
+<a href="https://socviz.co/" target="_blank" rel="noopener">Data Visualization: A Practical Introduction.</a> Princeton University Press, 2018.</p>
+</li>
+</ol>
+<h2 id="topics-covered">Topics covered</h2>
+<h2 id="-l-page">::: l-page</h2>
+<p>Class Topic                       Coding concepts covered</p>
+<hr>
+<ol>
+<li>
+<pre><code> Introduction                RStudio setup online, R Markdown
+</code></pre>
+</li>
+<li>
+<pre><code> Aesthetic mappings          **ggplot2** quickstart
+</code></pre>
+</li>
+<li>
+<pre><code> Visualizing amounts         `geom_col()`, `geom_point()`,
+                             position adjustments
+</code></pre>
+</li>
+<li>
+<pre><code> Visualizing distributions I stats, `geom_density()`,
+                             `geom_histogram()`
+</code></pre>
+</li>
+<li>
+<pre><code> Visualizing distributions   violin plots, sina plots, ridgeline plots
+ II
+</code></pre>
+</li>
+<li>
+<pre><code> Coordinate systems and      coords and position scales
+ axes
+</code></pre>
+</li>
+<li>
+<pre><code> Color scales                color and fill scales
+</code></pre>
+</li>
+<li>
+<pre><code> Figure design               ggplot themes
+</code></pre>
+</li>
+<li>
+<pre><code> Data wrangling              `mutate()`, `filter()`, `arrange()`
+</code></pre>
+</li>
+<li>
+<pre><code>Data wrangling              `group_by()`, `summarize()`, `count()`
+</code></pre>
+</li>
+<li>
+<pre><code>Getting things into the     `fct_reorder()`, `fct_lump()`
+right order
+</code></pre>
+</li>
+<li>
+<pre><code>Visualizing proportions     bar charts, pie charts
+</code></pre>
+</li>
+<li>
+<pre><code>Visualizing trends          `geom_smooth()`
+</code></pre>
+</li>
+<li>
+<pre><code>Working with models         `lm`, `cor.test`, **broom** package
+</code></pre>
+</li>
+<li>
+<pre><code>Visualizing uncertainty     frequency framing, error bars, **ggdist** package
+</code></pre>
+</li>
+<li>
+<pre><code>Dimension reduction I       PCA
+</code></pre>
+</li>
+<li>
+<pre><code>Dimension reduction II      kernel PCA, t-SNE, UMAP
+</code></pre>
+</li>
+<li>
+<pre><code>Clustering                  k-means clustering
+</code></pre>
+</li>
+<li>
+<pre><code>Visualizing geospatial      `geom_sf()`, `coord_sf()`
+data
+</code></pre>
+</li>
+<li>
+<pre><code>Color spaces, color vision  **colorspace** package
+deficiency
+</code></pre>
+</li>
+<li>
+<pre><code>Redundant coding, text      **ggrepel** package
+annotations
+</code></pre>
+</li>
+<li>
+<pre><code>Interactive plots           **ggiraph** package
+</code></pre>
+</li>
+<li>
+<pre><code>Over-plotting               jittering, 2d histograms,
+                            contour plots
+</code></pre>
+</li>
+<li>
+<pre><code>Compound figures            **patchwork** package
+</code></pre>
+</li>
+<li>
+<pre><code>Telling a story
+</code></pre>
+</li>
+<li>
+<pre><code>Web technologies            HTML, CSS, **distill** package
+</code></pre>
+</li>
+<li>
+<pre><code>Animations                  **gganimate** package
+</code></pre>
+</li>
+</ol>
+<hr>
+<p>:::</p>
+<h2 id="computing-requirements">Computing requirements</h2>
+<p>Programming needs to be learned by doing, and a significant portion of the in-class time will be dedicated to working through simple problems. All programming exercises will be available through a web-based system, so the only system requirement for student computers is a modern web browser.</p>
+<p>In the spring of 2021, the class will be taught entirely online. All lectures will be recorded and made available via Canvas, and all slides and worksheets will be made available on this website. Students will be able to take the class synchronously or asynchronously, at their option.</p>
+<h2 id="course-site">Course site</h2>
+<p>All materials and assignments will be posted on the course webpage at:
+<a href="https://wilkelab.org/SDS375">https://wilkelab.org/SDS375</a></p>
+<p>Assignments will be submitted and grades will be posted on Canvas at:
+<a href="https://utexas.instructure.com">https://utexas.instructure.com</a></p>
+<p>R compute sessions are available at:
+<a href="https://edupod.cns.utexas.edu">https://edupod.cns.utexas.edu</a><br>
+Note that edupods will be unavailable due to maintenance approximately two hours per month, usually on a Thursday afternoon between 4pm and 6pm. Specific maintenance times are published in advance here:
+<a href="https://wikis.utexas.edu/display/RCTFusers">https://wikis.utexas.edu/display/RCTFusers</a></p>
+<p>An online discussions forum will be available at the following private GitHub repo:
+<a href="https://github.com/wilkelab/SDS375_spring2021">https://github.com/wilkelab/SDS375_spring2021</a><br>
+You will be given access to this repo during the first week of class.</p>
+<h2 id="assignments-and-grading">Assignments and grading</h2>
+<p><strong>Note: This section was updated on 02/25/2021 due to the university closure from 02/14/2021 to 02/24/2021. The total number of homeworks was reduced from 10 to 9 and minimum guaranteed grades were adjusted accordingly.</strong></p>
+<p>The graded components of this class will be homeworks, projects, and online participation. Each week either one homework or one project is due. Homeworks will be relatively short visualization problems to be solved by the student, usually involving some small amount of programming to achieve a specified goal. Projects are larger and more involved data analysis problems that involve both programming and writing. Students will have at least one week to complete each homework and two weeks to complete each project. The submission deadlines for homeworks and projects will be Mondays at 11pm.</p>
+<p>There will be nine homeworks and three projects. Both homeworks and projects need to be submitted electronically on Canvas. Homeworks are worth 10 points and projects are worth 100 points. The lowest-scoring homework will be dropped, so that a maximum of 80 points can be obtained from the homeworks.</p>
+<p>Online participation assignments are small tasks meant to promote discussion and engagement with the class materials. They are worth between 5 and 10 points, for a maximum of 60.</p>
+<p>::: l-page
+Assignment type   Number   Points per assignment  Total points</p>
+<hr>
+<p>Homework          8 (+1)                      10            80
+Project           3                          100           300
+Participation     9                         5-10            60
+:::</p>
+<p>Thus, in summary, each project contributes 23% to the final grade, the totality of all homeworks contributes another 18% to the final grade, and participation contributes 13%. <strong>There are no traditional exams in this class and there is no final.</strong></p>
+<p>The participation assignments are meant to foster discussion about class materials on GitHub. Several of them can be performed more than once and will receive the indicated points each time they are performed successfully, up to the maximum number of times the specific activity is rewarded or the point maximum of 60, whichever is reached earlier. The following activities will be available:</p>
+<p>::: l-page
+Participation assignment            Points      Times rewarded</p>
+<hr>
+<p>Submit GitHub username                   5                  1x
+Make a comment in the sandbox            5                  1x
+Open an issue                           10                  3x
+Provide a constructive comment           5                  6x
+Close an issue that was answered         5                  3x
+:::</p>
+<p>The	class	will use +/- grading, and the exact grade boundaries will be determined at the end of the semester. However, the following minimum grades will be guaranteed:</p>
+<p>::: l-page
+Points achieved  Minimum guaranteed grade</p>
+<hr>
+<pre><code>   396 (90%)                        A-
+   352 (80%)                        B-
+   308 (70%)                        C-
+   220 (50%)                        D-
+</code></pre>
+<p>:::</p>
+<h2 id="late-assignment-policy">Late assignment policy</h2>
+<p>Homeworks that are submitted past the posted deadline will not be graded and will receive 0 points.</p>
+<p>Project submissions will have a 2-day grace period. Projects submitted during the grace period will have 25 points deducted from the obtained grade. After the grace period, students who have not submitted their project will receive 0 points.</p>
+<p>Participation assignments have no deadline and are available until the last class day.</p>
+<h2 id="extra-assignment-for-graduate-course-credit">Extra assignment for graduate course credit</h2>
+<p>Graduate students who are taking this class for graduate course credit will have to complete one additional assignment. The assignment will be to write a brief report (4-5 pages, no more than 3 figures) applying concepts from this class to a dataset of the student’s choice. This assignment will be graded pass/fail, and a failing grade on this assignment will result in a 10% penalty on the total points obtained in the class. Students who receive a failing grade can submit a revised assignment for regrading. The last day by which a revised assignment can be submitted is the last day of class in the semester.</p>
+<h2 id="office-hours">Office hours</h2>
+<p>Both the graduate TA and myself will be available for an open Zoom Q&amp;A each week. These sessions will be recorded and shared on Canvas. In addition, for any conversations that are not appropriate for an open Zoom call, such as grade complaints or other issues of a personal nature, please request an appointment. The most effective way to request an appointment for office hours is to suggest several times that work for you.  I would suggest to write an email such as the following:</p>
+<pre><code>Dear Dr. Wilke,
+
+I would like to request a meeting with you outside of 
+regular office hours this week. I am available Thurs.
+between 2pm and 3:30pm or Fri. before 11am or after 4pm.
+
+Thanks a lot,
+  John Doe
+</code></pre>
+<p>Note that we will not usually make appointments before 9am or after 5pm.</p>
+<h2 id="email-policy">Email policy</h2>
+<p>When emailing about this course, please put &ldquo;SDS375&rdquo; into the subject line. Emails to the instructor or TA should be restricted to organizational issues, such as requests for appointments, questions about course organization, etc. For all other issues, post an issue on GitHub, ask a question during open Zoom, or make an appointment for a one-on-one session.</p>
+<p>Specifically, we will not discuss technical issues related to assignments over email. Technical issues are questions concerning how to approach a particular problem, whether a particular solution is correct, or how to use the statistical software R. These questions should be posted as issues on GitHub. Also, we will not discuss grading-related matters over email. If you have a concern about grading, schedule a one-on-one Zoom meeting.</p>
+<h2 id="special-accommodations">Special accommodations</h2>
+<p><strong>Students with disabilities.</strong> Students with disabilities may request appropriate accommodations from the Division of Diversity and Community Engagement, Services for Students with Disabilities, 512-471-6259, <a href="https://diversity.utexas.edu/disability/">https://diversity.utexas.edu/disability/</a></p>
+<p><strong>Religious holy days.</strong> Students who must miss a class or an assignment to observe a religious holy day will be given an opportunity to complete the missed work within a reasonable time after the absence. According to UT Austin policy, such students must notify me of the pending absence at least fourteen days prior to the date of observance of a religious holy day.</p>
+<h2 id="academic-dishonesty">Academic dishonesty</h2>
+<p>This course is built upon the idea that student interaction is important and a powerful way to learn. We encourage you to communicate with other students, in particular through the 
+<a href="https://github.com/wilkelab/SDS375_spring2021" target="_blank" rel="noopener">discussion forums on GitHub.</a> However, there are times when you need to demonstrate your own ability to work and solve problems. In particular, your homeworks and projects are independent work, unless explicitly stated otherwise. You are allowed to confer with fellow students about general approaches to solve the problems in the assignments, but you have to do the assignments on your own and describe your work in your own words. Students who violate these expectations can expect to receive a failing grade on the assignment and will be reported to Student Judicial Services. These types of violations are reported to professional schools, should you ever decide to apply one day. Don’t do it—it’s not worth the consequences.</p>
+<h2 id="sharing-of-course-materials-is-prohibited">Sharing of Course Materials is Prohibited</h2>
+<p>Any materials in this class that are not posted publicly may not be shared online or with anyone outside of the class unless you have my explicit, written permission. This includes but is not limited to lecture hand-outs, videos, assessments (quizzes, exams, papers, projects, homework assignments), in-class materials, review sheets, and additional problem sets. Unauthorized sharing of materials promotes cheating. It is a violation of the University’s Student Honor Code and an act of academic dishonesty. We are well aware of the sites used for sharing materials, and any materials found online that are associated with you, or any suspected unauthorized sharing of materials, will be reported to Student Conduct and Academic Integrity in the Office of the Dean of Students. These reports can result in sanctions, including failure in the course.</p>
+<p>Any materials posted on the public class website (<a href="https://wilkelab.org/SDS375/">https://wilkelab.org/SDS375/</a>) are considered public and can be shared under the Creative Commons Attribution 
+<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a> license.</p>
+<h2 id="class-recordings">Class Recordings</h2>
+<p>Class recordings are reserved only for students in this class for educational purposes and are protected under FERPA. The recordings should not be shared outside the class in any form. Violation of this restriction by a student could lead to Student Misconduct proceedings.</p>
+<h2 class="appendix" id="reuse">Reuse</h2>
+<p>Text and figures are licensed under Creative Commons Attribution 
+<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>. Any computer code (R, HTML, CSS, etc.) in slides and worksheets, including in slide and worksheet sources, is also licensed under 
+<a href="https://github.com/wilkelab/SDS375/LICENSE.md" target="_blank" rel="noopener">MIT</a>. Note that figures in slides may be pulled in from external sources and may be licensed under different terms. For such images, image credits are available in the slide notes, accessible via pressing the letter &lsquo;p&rsquo;.</p>
 
           </div>
 
@@ -581,7 +829,7 @@
         </div>
 
         <div class="body-footer">
-          <p>Last updated on Sep 9, 2018</p>
+          <p>Last updated on Jun 28, 2021</p>
 
           
 
@@ -698,7 +946,7 @@
     
     
     
-    <script src="/js/academic.min.6f7ce8be710290b8c431bbc97f405d15.js"></script>
+    <script src="/js/academic.min.003301efbe1f0b70e41a35af5b77f67e.js"></script>
 
     
 
