@@ -1,0 +1,944 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="James Chu">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Introduction to Social Networks">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://jchu1225.github.io/courses/un3920/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-10901940-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-10901940-2', {});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
+  
+
+
+  
+  
+
+  
+  <link rel="alternate" href="/courses/un3920/index.xml" type="application/rss+xml" title="James Y. Chu">
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="https://jchu1225.github.io/courses/un3920/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="James Y. Chu">
+  <meta property="og:url" content="https://jchu1225.github.io/courses/un3920/">
+  <meta property="og:title" content="UN3920 Social Networks | James Y. Chu">
+  <meta property="og:description" content="Introduction to Social Networks"><meta property="og:image" content="https://jchu1225.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
+  <meta property="twitter:image" content="https://jchu1225.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
+  
+    <meta property="og:updated_time" content="2021-11-08T00:00:00&#43;00:00">
+  
+
+  
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>UN3920 Social Networks | James Y. Chu</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">James Y. Chu</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">James Y. Chu</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/files/cv.pdf"><span>CV</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/courses/"><span>Courses</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link js-theme-selector" data-toggle="dropdown" aria-haspopup="true">
+          <i class="fas fa-palette" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      
+
+
+
+
+
+  
+    
+  
+
+
+
+
+<form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+
+  
+  
+  
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/gu6008/">GU6008 Experimental Methods for Social Research</a>
+
+  </div>
+  
+  <div class="docs-toc-item active">
+    <a class="docs-toc-link" href="/courses/un3920/">UN3920 Introduction to Social Networks</a>
+
+  </div>
+  
+  
+</nav>
+
+    </div>
+
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
+      </ul>
+
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#course-summary">Course Summary</a>
+      <ul>
+        <li><a href="#what-is-this-course-about"><strong>What is this course about?</strong></a></li>
+        <li><a href="#what-should-you-expect-to-get-out-of-this-course"><strong>What should you expect to get out of this course?</strong></a></li>
+        <li><a href="#what-is-the-structure-of-course-sessions"><strong>What is the structure of course sessions?</strong></a></li>
+        <li><a href="#what-kind-of-student-does-this-course-have-in-mind"><strong>What kind of student does this course have in mind?</strong></a></li>
+        <li><a href="#how-will-performance-be-assessed"><strong>How will performance be assessed?</strong></a></li>
+        <li><a href="#what-are-the-basic-norms-in-this-course"><strong>What are the basic norms in this course?</strong></a></li>
+        <li><a href="#what-are-expectations-regarding-academic-integrity"><strong>What are expectations regarding academic integrity?</strong></a></li>
+        <li><a href="#where-can-i-access-course-materials"><strong>Where can I access course materials?</strong></a></li>
+      </ul>
+    </li>
+    <li><a href="#readings-and-due-dates-for-assignments">Readings and Due Dates for Assignments</a>
+      <ul>
+        <li><a href="#week-1-the-ubiquity-of-networks--jan-20">Week 1. The Ubiquity of Networks  (Jan 20)</a></li>
+        <li><a href="#week-2-types-of-network-data-jan-27">Week 2: Types of Network Data (Jan 27)</a></li>
+        <li><a href="#week-3-collecting-network-data-feb-3">Week 3: Collecting Network Data (Feb 3)</a></li>
+        <li><a href="#week-4-egocentric-networks-feb-10">Week 4: Egocentric Networks (Feb 10)</a></li>
+        <li><a href="#week-5-social-capital-feb-17">Week 5: Social Capital (Feb 17)</a></li>
+        <li><a href="#week-6-homophily-feb-24">Week 6: Homophily (Feb 24)</a></li>
+        <li><a href="#week-7-balance-march-3">Week 7: Balance (March 3)</a></li>
+        <li><a href="#week-8-brokerage-and-innovation-mar-10">Week 8: Brokerage and Innovation (Mar 10)</a></li>
+        <li><a href="#week-9-hierarchies-march-24"><strong>Week 9: Hierarchies (March 24)</strong></a></li>
+        <li><a href="#week-10-clusters-and-affiliations-march-31"><strong>Week 10: Clusters and Affiliations (March 31)</strong></a></li>
+        <li><a href="#week-11-peer-effects-and-contagion-april-7"><strong>Week 11: Peer Effects and Contagion (April 7)</strong></a></li>
+        <li><a href="#week-12-small-worlds-april-14"><strong>Week 12: Small Worlds (April 14)</strong></a></li>
+        <li><a href="#week-13-culture-april-21"><strong>Week 13: Culture (April 21)</strong></a></li>
+        <li><a href="#week-14-final-presentations-april-28"><strong>Week 14: Final presentations (April 28)</strong></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          <h1>UN3920 Social Networks</h1>
+
+          <div class="article-style">
+            <p><strong>Spring 2021</strong> | 4:10-6PM</p>
+<p><strong>Room:</strong> TBD</p>
+<p><strong>Office hours:</strong> 1-2:30pm Tuesdays, please 
+<a href="https://calendly.com/chu-office-hours/20min" target="_blank" rel="noopener">sign up here</a></p>
+<p><strong>Instructor Email:</strong> 
+<a href="mailto:jyc2163@columbia.edu">jyc2163@columbia.edu</a></p>
+<hr>
+<h2 id="course-summary">Course Summary</h2>
+<h3 id="what-is-this-course-about"><strong>What is this course about?</strong></h3>
+<p>Social networks are an integral part of everyday life. Networks are part of how we get a job, find partners, and discover new music. They also help us explain broader social phenomena, such as cultural change, innovation, or pandemic dynamics.</p>
+<p>The goal of the course is for you to be able to think sociologically<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> about networks. A unifying theme is that the social world is <strong>relational</strong>. How would we identify whether someone is respected in a group, except in relation to others in the group? How do we identify whether something is innovative without relating it to what came before? Often, we can better understand the social world when we think through the lens of social networks.</p>
+<p>The first four weeks of this course will equip you with the basic language around networks and network analysis. The remaining weeks will explore topics like social capital, innovation, hierarchy, power, homophily, contagion, culture, and peer influence. Theory and methods are intertwined, and the course will require that you collect, visualize, and analyze a social network. In groups, you will produce a final paper that uses concepts from this course to describe what you see in the network you collect.</p>
+<h3 id="what-should-you-expect-to-get-out-of-this-course"><strong>What should you expect to get out of this course?</strong></h3>
+<p>By the end of the course, you should be able to:</p>
+<ol>
+<li>identify social networks in everyday life,</li>
+<li>analyze the building blocks of networks, such as dyads and triads,</li>
+<li>collect your own network data on a problem interesting to you,</li>
+<li>describe the features of the network you collected,</li>
+<li>articulate how social networks help us understand important social phenomena.</li>
+</ol>
+<h3 id="what-is-the-structure-of-course-sessions"><strong>What is the structure of course sessions?</strong></h3>
+<p>Class will meet once per week. Each class typically will begin with discussion of readings which <strong>requires participation.</strong> I will end class a 20 minute lecture to highlight key concepts and notations that will assist you in the following week&rsquo;s readings.</p>
+<p>A core part of this class is group discussion and collaboration. Learning how to work with others is a core skill that you will use in nearly any career you choose. Also, after a year of remote learning, working in groups is a way to reconnect with or meet new people.</p>
+<h3 id="what-kind-of-student-does-this-course-have-in-mind"><strong>What kind of student does this course have in mind?</strong></h3>
+<p>This is an undergraduate upper division seminar. That means it is intended for advanced undergraduate students in Sociology and related disciplines. There are no formal pre-requisite courses, and I have designed the course to be accessible even to those with no programming experience. We will not be covering statistical modelling of networks (such as exponential random graph models), and as such, this course will complement methods-focused courses like &ldquo;GR 5062 Social Network Analysis.&rdquo;</p>
+<h3 id="how-will-performance-be-assessed"><strong>How will performance be assessed?</strong></h3>
+<p>There are four requirements for this class.</p>
+<table>
+<thead>
+<tr>
+<th>Assignment</th>
+<th>Description</th>
+<th>Deadlines</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Final project (25%)</td>
+<td>You will collect your own social network data to write a short paper (max 20 pages, double spaced). This report should (a) describe your data collection, (b) visualize your network, (c) summarize the concepts and ideas you are investigating, and (d) showcase what you see in your network. This will be a group project with 2-3 people. To reduce the chance of unfair work distribution, please submit your final paper in the form of a Google doc. I will rely on document history to see who contributed what. I may also ask your group for a contribution statement. More details will be provided in class.</td>
+<td>Your group will present your project results on April 28. The final paper is via upload to Coursework by <strong>11:59pm on Wednesday May 4.</strong></td>
+</tr>
+<tr>
+<td>Short assignments (20%)</td>
+<td>There are five short assignments due earlier in the semester. These are meant to jumpstart your progress toward the final project.</td>
+<td>Due throughout the semester via upload to Coursework by <strong>5:00 pm Wednesday, the day before the class.</strong></td>
+</tr>
+<tr>
+<td>Leading discussion and memos (25%)</td>
+<td>Please sign up to be discussion leaders for one of the weekly readings. You will do this three times (3x) during the semester. As a discussion leader, you will communicate to the class what you see as the most important points raised by the readings and prompt additional discussion about them. Discussion leaders should also write a 1-page single spaced memo that summarizes (1 paragraph), evaluates (1 paragraph), and extends (1-2 paragraphs) the core idea of a reading that interests you. Discussion leaders for that week are also invited to meet with me as needed.</td>
+<td>Please fill out a survey by <strong>5:00pm Jan 21</strong>, ranking up to four papers you would be interested in leading.</td>
+</tr>
+<tr>
+<td>Class participation (30%)</td>
+<td>Participation refers to informed contributions to the class. In addition to in-class participation, we will be using Perusall to help us collectively engage with the readings. Perusall is like Google Docs for the readings: you can highlight, comment, discuss, tag, and otherwise share your questions or observations about each text. Some people will contribute more in class, others will contribute more through online comments. Both are valid forms of participation.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="what-are-the-basic-norms-in-this-course"><strong>What are the basic norms in this course?</strong></h3>
+<ul>
+<li>If you need disability-related accommodations, let me know as soon as possible. You have the right to have your needs met. If you need accommodations, you should be registered with the Office of Disability Services (ODS) in 008 Milbank (212-854-2388, 
+<a href="mailto:disability@columbia.edu">disability@columbia.edu</a>).</li>
+<li>Life happens. If you submit your work after the deadlines listed above and before the final class of the semester, you will still receive 90% of the original points. <strong>(But, don&rsquo;t expect to receive comments.)</strong></li>
+<li>Avoid using cell phones in class, which can prevent you or others from learning. In cases of emergencies, please take your phone outside.</li>
+<li>I try to respond to emails within 24 hours. You are welcome to follow-up if I have not responded by then.</li>
+</ul>
+<h3 id="what-are-expectations-regarding-academic-integrity"><strong>What are expectations regarding academic integrity?</strong></h3>
+<p>Students are expected to exhibit the highest level of personal and academic honesty as they engage in scholarly discourse and research. In practical terms, you must be responsible for the full and accurate attribution of the ideas of others in all of your research papers and projects; you must be honest when taking your examinations; you must always submit your own work and not that of another student, scholar, or internet source. Students are responsible for knowing and correctly utilizing bibliographical guidelines.</p>
+<h3 id="where-can-i-access-course-materials"><strong>Where can I access course materials?</strong></h3>
+<p>The readings for each week of this course are listed below. There is one required textbook for this course:</p>
+<p>📕 Easley, David, and Jon Kleinberg (EK). 2010. <em>Networks, crowds, and markets: Reasoning about a highly connected world.</em> Cambridge University Press. ISBN: 978-0521195331. I have chosen this text in part because 
+<a href="http://www.cs.cornell.edu/home/kleinber/networks-book/" target="_blank" rel="noopener">a version of this text is available online.</a></p>
+<p>Other than the required textbook, all other readings are available online via the below links. Where linked versions of a reading are unavailable, I have uploaded them to Coursework.</p>
+<p>The study of social networks is sprawling, and we cannot possibly touch on all topics. For reference, here are the other major books on social networks:</p>
+<ul>
+<li>📕 Stanley Wasserman and Katherine Faust, Social Network Analysis: Methods and Applications (Cambridge, 1994)</li>
+<li>📕 Jackson, Matthew O. 2008. Social and Economic Networks. New Jersey: Princeton U. Press.</li>
+<li>📕 Barabasi, Albert-Laszlo. 2016. Network Science. New York: Cambridge University Press.</li>
+</ul>
+<hr>
+<h2 id="readings-and-due-dates-for-assignments">Readings and Due Dates for Assignments</h2>
+<h3 id="week-1-the-ubiquity-of-networks--jan-20">Week 1. The Ubiquity of Networks  (Jan 20)</h3>
+<ul>
+<li>E&amp;K, Ch. 1: Overview</li>
+<li>Borgatti, S. P., A. Mehra, A., D.J. Brass, &amp; G. Labianca. 2009. 
+<a href="https://www.science.org/doi/full/10.1126/science.1165821" target="_blank" rel="noopener">“Network analysis in the social sciences.”</a> Science 323(892): 892-895.</li>
+</ul>
+<p><strong>Please complete the signups for readings after class.</strong></p>
+<h3 id="week-2-types-of-network-data-jan-27">Week 2: Types of Network Data (Jan 27)</h3>
+<p><strong>❗ Short Assignment 1 - complete group assignment questionnaire before class.</strong></p>
+<ul>
+<li>EK, Ch 2.4</li>
+<li>Bearman, Peter, James Moody and Katherine Stovel. 2003. 
+<a href="https://www.journals.uchicago.edu/doi/full/10.1086/386272?mobileUi=0" target="_blank" rel="noopener">“Chains of Affection.”</a> American Journal of Sociology 110:44-91.</li>
+<li>Clauset, Aaron, Samuel Arbesman, and Daniel B. Larremore. 2015. 
+<a href="https://www.science.org/doi/10.1126/sciadv.1400005" target="_blank" rel="noopener">&ldquo;Systematic inequality and hierarchy in faculty hiring networks.&quot;</a> Science Advances 1(1): e1400005</li>
+<li>
+<ul>
+<li>Rule, A., Cointet, J. P., &amp; Bearman, P. S. (2015). 
+<a href="https://www.pnas.org/content/112/35/10837" target="_blank" rel="noopener">Lexical shifts, substantive changes, and continuity in State of the Union discourse, 1790–2014.</a> Proceedings of the National Academy of Sciences, 112(35), 10837-10844.</li>
+</ul>
+</li>
+</ul>
+<h3 id="week-3-collecting-network-data-feb-3">Week 3: Collecting Network Data (Feb 3)</h3>
+<ul>
+<li>Kadushin, Charles. 2011. “Ethical Dilemmas of Social Network Research.” Chapter 11 in Understanding Social Networks. Oxford University Press.</li>
+<li>Vehovar, V., K.L. Manfreda, G. Koren, and V. Hlebec 2008. Measuring Ego-Centered Social Networks on the Web: Questionnaire Design Issues. Social Networks, 30(3):213-222.</li>
+<li>Kitts, James A., and Diego F. Leal. 2021. &ldquo;What is(n’t) a friend? Dimensions of the friendship concept among adolescents.&rdquo; Social Networks 66(1): 161-170.</li>
+</ul>
+<h3 id="week-4-egocentric-networks-feb-10">Week 4: Egocentric Networks (Feb 10)</h3>
+<p><strong>❗ Short Assignment 2 - submit a one-page summary of what kind of network data your group will collect.</strong></p>
+<ul>
+<li>EK, Ch. 2.1 and 2.2</li>
+<li>Scott Feld. 1991. 
+<a href="https://www.jstor.org/stable/2781907?seq=13#metadata_info_tab_contents" target="_blank" rel="noopener">&ldquo;Why Your Friends Have More Friends Than You Do.&quot;</a> American Journal of Sociology 96:1464-77.</li>
+<li>McPherson, Miller, Lynn Smith-Lovin, and Matthew E. Brashears. 2006. 
+<a href="https://journals.sagepub.com/doi/abs/10.1177/000312240607100301" target="_blank" rel="noopener">&ldquo;Social Isolation in America: Changes in Core Discussion Networks over Two Decades.&quot;</a> American Sociological Review 71:353-375. (Skim the below comment)
+<ul>
+<li>Fischer, Claude S. 2009. 
+<a href="https://journals.sagepub.com/doi/10.1177/000312240907400408" target="_blank" rel="noopener">&ldquo;Comment: The 2004 GSS Finding of Shrunken Social Networks: An Artifact?.&quot;</a> American Sociological Review 74:657-669.</li>
+</ul>
+</li>
+</ul>
+<h3 id="week-5-social-capital-feb-17">Week 5: Social Capital (Feb 17)</h3>
+<ul>
+<li>
+<p>EK, Ch. 3.1-3.5</p>
+</li>
+<li>
+<p>Smith, S. (2005). 
+<a href="http://www.jstor.org/stable/10.1086/428814" target="_blank" rel="noopener">&ldquo;Don&rsquo;t put my name on it&rdquo;: Social capital activation and job-finding assistance among the black urban poor.</a> American Journal of Sociology, 111(1), 1-57.</p>
+</li>
+<li>
+<p>Small, Mario (2017). Someone to Talk To 
+<a href="https://scholar.harvard.edu/files/mariosmall/files/sttt_prefaceintroduction.pdf" target="_blank" rel="noopener">Ch 1.</a>. Oxford University Press</p>
+</li>
+<li>
+<p>Lin, Nan. 
+<a href="https://doi.org/10.2307/2654086" target="_blank" rel="noopener">“Inequality in Social Capital.”</a> Contemporary Sociology 29, no. 6 (2000): 785–95.</p>
+</li>
+</ul>
+<h3 id="week-6-homophily-feb-24">Week 6: Homophily (Feb 24)</h3>
+<p><strong>❗ Short Assignment 3 - install R and RStudio, and work through this introductory tutorial on Datacamp: <a href="https://campus.datacamp.com/courses/free-introduction-to-r">https://campus.datacamp.com/courses/free-introduction-to-r</a>. Upload a screenshot of your completion badge.</strong></p>
+<ul>
+<li>E&amp;K Ch. 4.1 and 4.2</li>
+<li>McPherson, Miller, Lynn Smith-Lovin, and James M. Cook. 2001. &ldquo;Birds of a Feather: Homophily in Social Networks.&rdquo; Annual Review of Sociology 27:415-4</li>
+<li>DellaPosta, Daniel, Yongren Shi, and Michael Macy. 2015. “Why do liberals drink Lattes?” American Journal of Sociology 120(5): 1473-1511.</li>
+<li>Feld, S.L. (1981) The focused organization of social ties. American Journal of Sociology, 86(5):1015-1035.</li>
+<li>Bail, C.A. et al. (2018). 
+<a href="https://doi.org/10.1073/pnas.1804840115" target="_blank" rel="noopener">Exposure to opposing views on social media can increase political polarization.</a> PNAS.</li>
+</ul>
+<h3 id="week-7-balance-march-3">Week 7: Balance (March 3)</h3>
+<ul>
+<li>EK, Ch. 5.1</li>
+<li>Simmel, George. 1950. “The Triad” in Kurt Wolf (ed.), The Sociology of Georg Simmel, Free Press, 145‐169.</li>
+<li>Dorwin Cartwright and Frank Harary. 1956. “Structural Balance,” Psychological Review 63:277-293</li>
+<li>Taylor, Howard. 1970. Balance in Small Groups. Chapter 2, pp. 11-49. New York: Von Nostrand Reinhold Company. <strong>CW</strong></li>
+</ul>
+<h3 id="week-8-brokerage-and-innovation-mar-10">Week 8: Brokerage and Innovation (Mar 10)</h3>
+<p><strong>❗ Short Assignment 4 - this is a group assignment. Complete the tutorial on visualizing networks. Submit a &lt;1 page writeup responding to the questions in the tutorial.</strong></p>
+<ul>
+<li>Granovetter, M. 1973. “The strength of weak ties.” American Journal of Sociology 78(2):349-399.</li>
+<li>Padgett, J.F. and C.K. Ansell. 1993. “Robust action and the rise of the Medici, 1400-1434.” American Journal of Sociology 98(6): 1259-1319.</li>
+<li>Burt, R.S. 2004. Structural Holes and Good Ideas. American Journal of Sociology, 110(2):349-399.</li>
+<li>Vedres, B., and D. Stark. 2010. Structural Folds: Generative Disruption in Overlapping Groups. American Journal of Sociology, 115(4):1150-1190.</li>
+</ul>
+<p><strong>SPRING BREAK: no class (March 17)</strong></p>
+<h3 id="week-9-hierarchies-march-24"><strong>Week 9: Hierarchies (March 24)</strong></h3>
+<ul>
+<li>E&amp;K Ch. 12.1 - 12.3: Bargaining and power in networks.</li>
+<li>Cook, K. S., R. M. Emerson, M. R. Gilmore, and T. Yamagishi. 1983. &ldquo;The Distribution of Power in Exchange Networks: Theory and Experimental Results.&rdquo; American Journal of Sociology 89:275-305</li>
+<li>Martin, J.L. 2005. 
+<a href="https://www.jstor.org/stable/10.1086/432781" target="_blank" rel="noopener">Is Power Sexy?</a>  American Journal of Sociology, 111(2):408-446.</li>
+<li>Chase, Ivan. 1982. “Dynamics of Hierarchy Formation: The Sequential Development of Dominance Relationships.” Behaviour 80, 3-4:218-239 (22).</li>
+</ul>
+<h3 id="week-10-clusters-and-affiliations-march-31"><strong>Week 10: Clusters and Affiliations (March 31)</strong></h3>
+<ul>
+<li>Breiger, Ronald L. 1974. “The Duality of Persons and Groups.” Social Forces 53: 181-190.</li>
+<li>Newman, Mark E. J. 2006. 
+<a href="https://www.pnas.org/content/103/23/8577" target="_blank" rel="noopener">“Modularity and Community Structure in Networks.”</a> Proceedings of the National Academy of Sciences 103 (23): 8577–8582.</li>
+<li>Moody, James and Douglas R. White. 2003. “Social Cohesion and Embeddedness.” American Sociological Review 68:103-127.</li>
+<li>Borgatti, S P and M Everett. 1997. “Network Analysis of 2-Mode Data.” Social Networks 19: 243-269.</li>
+</ul>
+<h3 id="week-11-peer-effects-and-contagion-april-7"><strong>Week 11: Peer Effects and Contagion (April 7)</strong></h3>
+<ul>
+<li>E&amp;K, Ch. 19</li>
+<li>Carrell, Scott E., Bruce I. Sacerdote, and James E. West. &ldquo;From natural variation to optimal policy? The importance of endogenous peer group formation.&rdquo; Econometrica 81, no. 3 (2013): 855-882.</li>
+<li>Paluck, Elizabeth Levy, Hana Shepherd, and Peter M. Aronow. &ldquo;Changing climates of conflict: A social network experiment in 56 schools.&rdquo; Proceedings of the National Academy of Sciences (2016): 566-571.</li>
+<li>Centola, D., &amp; Macy, M. (2007). Complex contagions and the weakness of long ties. American journal of Sociology, 113(3), 702-734.</li>
+</ul>
+<h3 id="week-12-small-worlds-april-14"><strong>Week 12: Small Worlds (April 14)</strong></h3>
+<p><strong>❗ Short Assignment 5: Submit an complete outline (or draft) of your final paper. Include a one-page cover letter describing any remaining questions or issues your group is facing.</strong></p>
+<ul>
+<li>Milgram, S. 1967. “The small world problem.” Psychology Today 1:62-67.</li>
+<li>Watts, D.J. &amp; S.H. Strogatz. 1998. “Collective dynamics of small-world networks.” Nature 393: 440-442.</li>
+<li>Granovetter, Mark. 2003. “Ignorance, knowledge, and outcomes in a small world.” Science 301:773-774.</li>
+<li>Uzzi, B. &amp; J. Spiro. 2005. “Collaboration and creativity: the small world problem” American Journal of Sociology (pp. 337-466, 492-498, skim rest)</li>
+</ul>
+<h3 id="week-13-culture-april-21"><strong>Week 13: Culture (April 21)</strong></h3>
+<ul>
+<li>Bearman, Peter and Katherine Stovel. 2000. “Becoming a Nazi.” Poetics 27:69-90.</li>
+<li>De Vaan, M., Stark, D., &amp; Vedres, B. (2015). Game changer: The topology of creativity. American Journal of Sociology, 120(4), 1144-1194.</li>
+<li>Hoffman, M. A. 2019. &ldquo;The Materiality of Ideology: Cultural Consumption and Political Thought after the American Revolution.&rdquo; American Journal of Sociology, 125(1), 1-62.</li>
+</ul>
+<h3 id="week-14-final-presentations-april-28"><strong>Week 14: Final presentations (April 28)</strong></h3>
+<p>NO READINGS</p>
+<p><strong>❗ Final Papers Due (11:59pm on Wednesday, May 4)</strong></p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>There is a universe of research to explore in computer science, economics, political science, and elsewhere. I will touch on these at times, but the focus here will be in sociology.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+          </div>
+
+          
+
+
+
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Last updated on Nov 9, 2021</p>
+
+          
+
+
+
+
+
+  
+  
+
+<p class="edit-page">
+  <a href="https://github.com/gcushen/hugo-academic/edit/master/content/courses/UN3920/_index.md">
+    <i class="fas fa-pen pr-2"></i>Edit this page
+  </a>
+</p>
+
+
+
+
+          
+
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    © 2021 &middot; 
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/r.min.js"></script>
+        
+      
+
+    
+
+    
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
+    
+
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.1/anchor.min.js" integrity="sha256-pB/deHc9CGfFpJRjC43imB29Rse8tak+5eXqntO94ck=" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="/js/academic.min.003301efbe1f0b70e41a35af5b77f67e.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
