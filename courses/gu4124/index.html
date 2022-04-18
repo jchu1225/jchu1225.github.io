@@ -1,0 +1,872 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="James Chu">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Status, Evaluation, and Inequality">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://jchu1225.github.io/courses/gu4124/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-10901940-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-10901940-2', {});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
+  
+
+
+  
+  
+
+  
+  <link rel="alternate" href="/courses/gu4124/index.xml" type="application/rss+xml" title="James Y. Chu">
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="https://jchu1225.github.io/courses/gu4124/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="James Y. Chu">
+  <meta property="og:url" content="https://jchu1225.github.io/courses/gu4124/">
+  <meta property="og:title" content="GU4124 Status, Evaluation, and Inequality | James Y. Chu">
+  <meta property="og:description" content="Status, Evaluation, and Inequality"><meta property="og:image" content="https://jchu1225.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
+  <meta property="twitter:image" content="https://jchu1225.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
+  
+    <meta property="og:updated_time" content="2022-02-07T00:00:00&#43;00:00">
+  
+
+  
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>GU4124 Status, Evaluation, and Inequality | James Y. Chu</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">James Y. Chu</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">James Y. Chu</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/files/cv.pdf"><span>CV</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/courses/"><span>Courses</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link js-theme-selector" data-toggle="dropdown" aria-haspopup="true">
+          <i class="fas fa-palette" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      
+
+
+
+
+
+  
+    
+  
+
+
+
+
+<form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+
+  
+  
+  
+  
+  <div class="docs-toc-item active">
+    <a class="docs-toc-link" href="/courses/gu4124/">GU4124 Status, Evaluation, and Inequality</a>
+
+  </div>
+  
+  
+</nav>
+
+    </div>
+
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
+      </ul>
+
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#course-summary">Course Summary</a>
+      <ul>
+        <li><a href="#what-is-this-course-about"><strong>What is this course about?</strong></a></li>
+        <li><a href="#what-is-the-structure-of-course-sessions"><strong>What is the structure of course sessions?</strong></a></li>
+        <li><a href="#what-kind-of-student-does-this-course-have-in-mind"><strong>What kind of student does this course have in mind?</strong></a></li>
+        <li><a href="#how-will-performance-be-assessed"><strong>How will performance be assessed?</strong></a></li>
+        <li><a href="#what-are-the-basic-norms-in-this-course"><strong>What are the basic norms in this course?</strong></a></li>
+        <li><a href="#what-are-expectations-regarding-academic-integrity"><strong>What are expectations regarding academic integrity?</strong></a></li>
+        <li><a href="#where-can-i-access-course-materials"><strong>Where can I access course materials?</strong></a></li>
+      </ul>
+    </li>
+    <li><a href="#readings-and-due-dates-for-assignments">Readings and Due Dates for Assignments</a></li>
+    <li><a href="#part-i-how-status-distinctions-emerge">Part I. How Status Distinctions Emerge</a>
+      <ul>
+        <li><a href="#week-1-introduction--xx">Week 1. Introduction  (XX)</a></li>
+        <li><a href="#week-2-how-status-distinctions-emerge-xx">Week 2: How Status Distinctions Emerge (XX)</a></li>
+        <li><a href="#week-3-status-competition-xx">Week 3: Status Competition (XX)</a></li>
+        <li><a href="#week-4-evaluation-xx">Week 4: (E)valuation (XX)</a></li>
+        <li><a href="#week-5-from-status-to-status-characteristics-xx">Week 5: From Status to Status Characteristics (XX)</a></li>
+      </ul>
+    </li>
+    <li><a href="#part-ii-how-status-makes-inequality-durable">PART II. How Status Makes Inequality Durable</a>
+      <ul>
+        <li><a href="#week-6-durable-inequality-xx">Week 6: Durable Inequality (XX)</a></li>
+        <li><a href="#week-7-varieties-of-discrimination-xx">Week 7: Varieties of Discrimination (XX)</a></li>
+        <li><a href="#week-8-categories-and-closure-xx">Week 8: Categories and Closure (XX)</a></li>
+        <li><a href="#week-9-cumulative-disadvantage-xx"><strong>Week 9: Cumulative (Dis)advantage (XX)</strong></a></li>
+        <li><a href="#week-10-networks-crowds-and-the-long-tail-xx"><strong>Week 10: Networks, Crowds, and the Long Tail (XX)</strong></a></li>
+        <li><a href="#week-11-evaluative-tools-and-their-consequences-for-inequality-xx"><strong>Week 11: Evaluative Tools and Their Consequences for Inequality (XX)</strong></a></li>
+        <li><a href="#week-12-organizations-also-play-the-status-game-april-14"><strong>Week 12: Organizations Also Play the Status Game (April 14)</strong></a></li>
+        <li><a href="#week-13-the-legitimacy-of-inequality-xx"><strong>Week 13: The Legitimacy of Inequality (XX)</strong></a></li>
+        <li><a href="#week-14-presentations-xx"><strong>Week 14: Presentations (XX)</strong></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          <h1>GU4124 Status, Evaluation, and Inequality</h1>
+
+          <div class="article-style">
+            <p><strong>Fall 2022</strong> | Fridays 10:10a - 12p</p>
+<p><strong>Room:</strong> 509 Knox</p>
+<p><strong>Office hours:</strong> 1-2:30pm Tuesdays, please 
+<a href="https://calendly.com/chu-office-hours/15min" target="_blank" rel="noopener">sign up here</a></p>
+<p><strong>Instructor Email:</strong> 
+<a href="mailto:jyc2163@columbia.edu">jyc2163@columbia.edu</a></p>
+<hr>
+<h2 id="course-summary">Course Summary</h2>
+<h3 id="what-is-this-course-about"><strong>What is this course about?</strong></h3>
+<p>Who gets respect? On what basis? Differences in respect and esteem are a basic form of inequality, with consequences for the (re)production of other inequalities and their durability. The goal of this course is to equip you to see the throughline between status, evaluation, and inequality. Along the way, you will learn how social psychological theories at the micro-level relate to macro-level inequalities. We will tackle questions like the following: Why, and how, do status hierarchies emerge in nearly all societies and groups? How do status differences affect material inequalities like access to jobs? Why is it so hard to change inaccurate stereotypes about women or racial minorities? Will algorithms improve or exacerbate biases in our assessments of merit?</p>
+<h3 id="what-is-the-structure-of-course-sessions"><strong>What is the structure of course sessions?</strong></h3>
+<p>This is a survey course. Each week we will discuss key readings on a topic. Class will meet once per week and <strong>requires participation.</strong></p>
+<p>The course will be difficult. You will be pushed to understand key ideas in an expansive literature, and you will practice being as creative as possible. In particular, you will be asked to submit short papers that meaningfully extend the ideas in the readings.</p>
+<p>You may choose to write an empirical or conceptual paper. For an empirical paper, you should outline an original empirical study somehow informed by or related to the week’s readings. Your summary should be organized in the following four sections: (1) a research question (1-2 sentences), (2) a description of methods (2-3 paragraphs), (3) your prediction(s) (1-2 sentences), and (4) why the study would be interesting and/or important (2-3 sentences).</p>
+<p>For a conceptual paper, you should advance one or more of the week’s readings in some way. Examples include: (a) connnecting ideas from two or more papers to develop a more general theory; critiquing ideas in one or more papers and proposing an alternative that you argue is better or more valid; developing a rival theory to challenge the ideas in one or more papers. In your conceptual paper, underline your main thesis statement(s) (1-2 sentences).</p>
+<h3 id="what-kind-of-student-does-this-course-have-in-mind"><strong>What kind of student does this course have in mind?</strong></h3>
+<p>This is a graduate survey course that is also open to advanced undergraduate students in Sociology and related disciplines. There are no formal pre-requisites.</p>
+<h3 id="how-will-performance-be-assessed"><strong>How will performance be assessed?</strong></h3>
+<p>There are four requirements for this class.</p>
+<table>
+<thead>
+<tr>
+<th>Assignment</th>
+<th>Description</th>
+<th>Deadlines</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Final paper (30%)</td>
+<td>This class does not have a conventional final paper. Rather, the final paper is an opportunity for you to further develop your research creativity. The final paper will consist of 3 short papers (note that no more than 1 can be a conceptual short paper).</td>
+<td>The final paper is due via upload to Coursework by <strong>11:59pm on @@@@.</strong></td>
+</tr>
+<tr>
+<td>Short papers (30%)</td>
+<td>Choose any five (5) weeks to submit either an empirical or conceptual short paper. You may submit more than five, and the best five will constitute your final grade</td>
+<td>Due throughout the semester via upload to Coursework by <strong>11:59 pm XX, the day before class.</strong></td>
+</tr>
+<tr>
+<td>Leading discussion  (20%)</td>
+<td>Please sign up to be discussion leaders for one of the weekly readings. You will do this twice (2x) during the semester. As a discussion leader, you will communicate to the class what you see as the most important points raised by the readings and prompt additional discussion about them.</td>
+<td>Please fill out a survey by <strong>5:00pm XX</strong>, ranking up to three papers you would be interested in leading.</td>
+</tr>
+<tr>
+<td>Class participation (20%)</td>
+<td>Participation refers to informed contributions to the class. In addition to in-class participation, we will be using Perusall to help us collectively engage with the readings. Perusall is like Google Docs for the readings: you can highlight, comment, discuss, tag, and otherwise share your questions or observations about each text. Some people will contribute more in class, others will contribute more through online comments. Both are valid forms of participation.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="what-are-the-basic-norms-in-this-course"><strong>What are the basic norms in this course?</strong></h3>
+<ul>
+<li>If you need disability-related accommodations, let me know as soon as possible. You have the right to have your needs met. If you need accommodations, you should be registered with the Office of Disability Services (ODS) in 008 Milbank (212-854-2388, 
+<a href="mailto:disability@columbia.edu">disability@columbia.edu</a>).</li>
+<li>Life happens. If you submit your work after the deadlines listed above and <strong>before the final class of the semester</strong>, you can still receive up to 90% of the original points. <strong>(But, don&rsquo;t expect to receive comments.)</strong></li>
+<li>Avoid using cell phones in class, which can prevent you or others from learning. In cases of emergencies, please take your phone outside.</li>
+<li>I try to respond to emails within 24 hours. You are welcome to follow-up if I have not responded by then.</li>
+</ul>
+<h3 id="what-are-expectations-regarding-academic-integrity"><strong>What are expectations regarding academic integrity?</strong></h3>
+<p>Students are expected to exhibit the highest level of personal and academic honesty as they engage in scholarly discourse and research. In practical terms, you must be responsible for the full and accurate attribution of the ideas of others in all of your research papers and projects; you must be honest when taking your examinations; you must always submit your own work and not that of another student, scholar, or internet source. Students are responsible for knowing and correctly utilizing bibliographical guidelines.</p>
+<h3 id="where-can-i-access-course-materials"><strong>Where can I access course materials?</strong></h3>
+<p>The readings for each week of this course are listed below and can be accessed by the links.</p>
+<hr>
+<h2 id="readings-and-due-dates-for-assignments">Readings and Due Dates for Assignments</h2>
+<h2 id="part-i-how-status-distinctions-emerge">Part I. How Status Distinctions Emerge</h2>
+<h3 id="week-1-introduction--xx">Week 1. Introduction  (XX)</h3>
+<ul>
+<li>Ridgeway, Cecilia L. 2019. Status: Why Is It Everywhere? Why Does It Matter? New York: Russell Sage Foundation. (excerpts)</li>
+</ul>
+<h3 id="week-2-how-status-distinctions-emerge-xx">Week 2: How Status Distinctions Emerge (XX)</h3>
+<ul>
+<li>Goode, William J. 1978. The Celebration of Heroes: Prestige as a Control System. Berkeley: UC Press. (excerpts)</li>
+<li>Gould, Roger V. 2002. &ldquo;The Origins of Status Hierarchies: A Formal Theory and Empirical Test.&rdquo; American Journal of Sociology 107(5):1143-1178.</li>
+</ul>
+<h3 id="week-3-status-competition-xx">Week 3: Status Competition (XX)</h3>
+<ul>
+<li>Simmel, Georg. 2008 [1903]. &ldquo;Soziologie der Konkurrenz – Sociology of Competition.&rdquo; The Canadian Journal of Sociology 33(4): 945-956</li>
+<li>Charness, Gary, David Masclet, and Marie Claire Villeval. 2014. &ldquo;The Dark Side of Competition for Status.&rdquo; Management Science 60(1): 38-55.</li>
+<li>Gould, Roger V. 2003. Collision of Wills: How Ambiguity about Social Rank Breeds Conflict. Chicago, IL: University of Chicago Press. (excerpts)</li>
+</ul>
+<h3 id="week-4-evaluation-xx">Week 4: (E)valuation (XX)</h3>
+<ul>
+<li>Stark, David. 2011. The sense of dissonance: Accounts of worth in economic life. Princeton University Press. (excerpts)</li>
+<li>Bourdieu, Pierre. 1984 [1979]. Distinction: A social critique of the judgement of taste. Harvard University Press. (excerpts)</li>
+<li>Espeland, Wendy Nelson, and Mitchell L. Stevens. 1998. &ldquo;Commensuration as a Social Process.&rdquo; Annual Review of Sociology 24(1): 313-343.</li>
+</ul>
+<h3 id="week-5-from-status-to-status-characteristics-xx">Week 5: From Status to Status Characteristics (XX)</h3>
+<ul>
+<li>Berger, Joseph, Bernard P. Cohen, and Morris Zelditch Jr. 1972. &ldquo;Status characteristics and social interaction.&rdquo; American Sociological Review 37(3): 241-255.</li>
+<li>Ridgeway, C. L. and Shelly. J. Correll. 2006. “Consensus and the Creation of Status Beliefs.” Social Forces 85(1):431–53.</li>
+<li>Correll, Shelley J., Cecilia L. Ridgeway, Ezra W. Zuckerman, Sharon Jank, Sara Jordan-Bloch, and Sandra Nakagawa. 2017. “It’s the Conventional Thought That Counts.” American Sociological Review 82(2):297–327.</li>
+</ul>
+<h2 id="part-ii-how-status-makes-inequality-durable">PART II. How Status Makes Inequality Durable</h2>
+<h3 id="week-6-durable-inequality-xx">Week 6: Durable Inequality (XX)</h3>
+<ul>
+<li>Ridgeway, Cecilia L. 2014. &ldquo;Why Status Matters for Inequality.&rdquo; American Sociological Review 79(1):1-16.</li>
+<li>Tilly, Charles. 1998. Durable Inequality. University of California Press. (excerpts)</li>
+<li>Tomaskovic-Devey, Donald, and Dustin Avent-Holt. 2019. Relational Inequalities: An Organizational Approach. Oxford, UK: Oxford University Press. (excerpts)</li>
+</ul>
+<h3 id="week-7-varieties-of-discrimination-xx">Week 7: Varieties of Discrimination (XX)</h3>
+<ul>
+<li>Altonji, Joseph G., 2005. &ldquo;Employer learning, statistical discrimination and occupational attainment.&rdquo; The American Economic Review 95(2): 112-117.</li>
+<li>Correll, Shelley J., Stephen Benard, and In Paik. 2007. &ldquo;Getting a job: Is there a motherhood penalty?&rdquo; American journal of sociology 112(5): 1297-1338.</li>
+<li>Pedulla, David. 2020. Making the cut: Hiring decisions, bias, and the consequences of nonstandard, mismatched, and precarious employment. Princeton University Press. (excerpts)</li>
+</ul>
+<h3 id="week-8-categories-and-closure-xx">Week 8: Categories and Closure (XX)</h3>
+<ul>
+<li>Rivera, Lauren. 2015. Pedigree: How Elite Students Get Elite Jobs. Princeton University Press. (excerpts)</li>
+<li>Abraham, Mabel. &ldquo;Gender-role incongruity and audience-based gender bias: An examination of networking among entrepreneurs.&rdquo; Administrative Science Quarterly 65, no. 1 (2020): 151-180.</li>
+<li>Fiel, Jeremy. 2015. &ldquo;Closing Ranks: Closure, Status Competition, and School Segregation.&rdquo; American Journal of Sociology 121(1):126-170.</li>
+<li>Parkin, Frank. 1979. Marxism and Class Theory: A Bourgeois Critique. New York: Columbia University Press. (excerpts)</li>
+</ul>
+<h3 id="week-9-cumulative-disadvantage-xx"><strong>Week 9: Cumulative (Dis)advantage (XX)</strong></h3>
+<ul>
+<li>van de Rijt, Arnout. 2019. &ldquo;Self-Correcting Dynamics in Social Influence Processes.&rdquo; American Journal of Sociology 124(5):1468-1495.</li>
+<li>DiPrete, Thomas A., and Gregory M. Eirich. 2006. &ldquo;Cumulative advantage as a mechanism for inequality: A review of theoretical and empirical developments.&rdquo; Annu. Rev. Sociol. 32: 271-297.</li>
+<li>Steele, Claude M., and Joshua Aronson. 1995. “Stereotype Threat and the Intellectual Test Performance of African Americans.” Journal of Personality and Social Psychology 69(5):797-811.</li>
+</ul>
+<h3 id="week-10-networks-crowds-and-the-long-tail-xx"><strong>Week 10: Networks, Crowds, and the Long Tail (XX)</strong></h3>
+<ul>
+<li>Rosen, Sherwin. &ldquo;The economics of superstars.&rdquo; The American economic review 71, no. 5 (1981): 845-858.</li>
+<li>Anderson, Chris. 2006. The Long Tail: Why the Future of Business Is Selling Less of More. New York: Hyperion Books. (excerpts)</li>
+<li>Salgaik, Matt, Peter Dodds, and Duncan Watts. 2006. Experimental Study of Inequality and Unpredictability in an Artificial Cultural Market. Science 311(5762): 854-856.</li>
+</ul>
+<h3 id="week-11-evaluative-tools-and-their-consequences-for-inequality-xx"><strong>Week 11: Evaluative Tools and Their Consequences for Inequality (XX)</strong></h3>
+<ul>
+<li>O&rsquo;Neil, Cathy. 2016. Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy. New York: Broadway Books.</li>
+<li>Biagioli, Mario and Alexandra Lippman. 2020. Gaming the Metrics: Misconduct and Manipulation in Academic Research. Boston: MIT Press.</li>
+<li>Kiviat, Barbara. 2019. The Moral Limits of Predictive Practices: The Case of Credit-Based Insurance Scores. American Sociological Review.</li>
+<li>Rivera, Lauren and Andras Tilcik. 2020. Scaling Down Inequality: Rating Scales, Gender Bias, and the Architecture of Evaluation. American Sociological Review.</li>
+</ul>
+<h3 id="week-12-organizations-also-play-the-status-game-april-14"><strong>Week 12: Organizations Also Play the Status Game (April 14)</strong></h3>
+<ul>
+<li>Bothner, Matthew S., Joel M. Podolny, and Edward Bishop Smith. 2011. &ldquo;Organizing Contests for Status: The Matthew Effect vs. the Mark Effect.&rdquo; Management Science 57(3): 439-457.</li>
+<li>Podolny, Joel M. 2010. Status Signals: A Sociological Study of Market Competition. Princeton: Princeton University Press.</li>
+<li>James Chu “Cameras of Merit or Engines of Inequality? The Effect of College Rankings on the Enrollment of Disadvantaged Students.” American Journal of Sociology 126(6): 1307-1346.</li>
+</ul>
+<h3 id="week-13-the-legitimacy-of-inequality-xx"><strong>Week 13: The Legitimacy of Inequality (XX)</strong></h3>
+<ul>
+<li>Giridharadas, Anand. 2018. Winners Take All. [excerpts]</li>
+<li>Leslie McCall, Derek Burk, Marie Laperrière, Jennifer A. Richeson. 2017. &ldquo;Rising inequality shapes opportunity beliefs.&rdquo; Proceedings of the National Academy of Sciences 114(36): 9593-9598.</li>
+<li>Lamont, Michèle. 2000. The Dignity of Working Men: Morality and the Boundaries of Race, Class, and Immigration. Cambridge. MA: Harvard University Press.</li>
+</ul>
+<h3 id="week-14-presentations-xx"><strong>Week 14: Presentations (XX)</strong></h3>
+<p><strong>❗ Final Papers Due (11:59pm on XX)</strong></p>
+
+          </div>
+
+          
+
+
+
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Last updated on Feb 4, 2022</p>
+
+          
+
+
+
+
+
+  
+  
+
+<p class="edit-page">
+  <a href="https://github.com/gcushen/hugo-academic/edit/master/content/courses/GU4124/_index.md">
+    <i class="fas fa-pen pr-2"></i>Edit this page
+  </a>
+</p>
+
+
+
+
+          
+
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    © 2022 &middot; 
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/r.min.js"></script>
+        
+      
+
+    
+
+    
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
+    
+
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.1/anchor.min.js" integrity="sha256-pB/deHc9CGfFpJRjC43imB29Rse8tak+5eXqntO94ck=" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="/js/academic.min.003301efbe1f0b70e41a35af5b77f67e.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
